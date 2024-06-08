@@ -11,15 +11,15 @@ def get_image():
     img_url = \
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mount_Fuji_from_Mount_Aino.jpg/640px-Mount_Fuji_from_Mount_Aino.jpg'
 
-    im = imread(img_url)
+    img = imread(img_url)
 
     st.image(
-        im,
+        img,
         caption='image from wikimedia commons',
         use_column_width=True
     )
 
-    return im
+    return img
 
 
 def show_histogram(im):
